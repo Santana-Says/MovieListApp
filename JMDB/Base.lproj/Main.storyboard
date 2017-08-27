@@ -1,13 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="diq-ZW-dex">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JMDB" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,130 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="144" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="m9z-ye-mRl">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="144" id="KIf-im-INU">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="144"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KIf-im-INU" id="Y2x-fF-btc">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="143"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Ejt-kC-J0j">
+                                                    <rect key="frame" x="117" y="8" width="475" height="127"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guardians of the Galaxy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="VAR-hT-S9P">
+                                                            <rect key="frame" x="0.0" y="0.0" width="475" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="21" id="SDH-aq-kmT"/>
+                                                                <constraint firstAttribute="width" constant="475" id="hvI-sM-FDF"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="default">
+                                                                <mask key="constraints">
+                                                                    <exclude reference="hvI-sM-FDF"/>
+                                                                </mask>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="KBr-W0-B4E">
+                                                            <rect key="frame" x="0.0" y="27" width="475" height="73"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="475" id="4gD-at-xd3"/>
+                                                                <constraint firstAttribute="height" constant="73" id="G9p-4r-Ou5"/>
+                                                            </constraints>
+                                                            <string key="text">The cast was an eccentric bunch, and baby Groot stole my heart. I especially loved the prison scene, when they were goining over the datials of the escape plan and Groot completely sidelined everything. *Spoiler Alert* Starlords Dad is a Celestial. Which is essentially like being a GOD, so starlord is basically half GOD!!</string>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="default">
+                                                                <mask key="constraints">
+                                                                    <exclude reference="4gD-at-xd3"/>
+                                                                </mask>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="http://www.imdb.com/title/tt2015381/?ref_=nv_sr_2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="AQS-2p-XSm">
+                                                            <rect key="frame" x="0.0" y="106" width="475" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="475" id="JFy-e3-SYS"/>
+                                                                <constraint firstAttribute="height" constant="21" id="w9p-tN-bGY"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="default">
+                                                                <mask key="constraints">
+                                                                    <exclude reference="JFy-e3-SYS"/>
+                                                                </mask>
+                                                            </variation>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guardians" translatesAutoresizingMaskIntoConstraints="NO" id="zwD-dT-MOf">
+                                                    <rect key="frame" x="8" y="8" width="101" height="127"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="101" id="4Da-hH-dup"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="zwD-dT-MOf" firstAttribute="bottom" secondItem="Y2x-fF-btc" secondAttribute="bottomMargin" id="Acb-io-MPd"/>
+                                                <constraint firstItem="Ejt-kC-J0j" firstAttribute="trailing" secondItem="Y2x-fF-btc" secondAttribute="trailingMargin" id="Tib-m2-G80"/>
+                                                <constraint firstItem="zwD-dT-MOf" firstAttribute="top" secondItem="Y2x-fF-btc" secondAttribute="topMargin" id="Uhy-W4-2aP"/>
+                                                <constraint firstItem="Ejt-kC-J0j" firstAttribute="bottom" secondItem="Y2x-fF-btc" secondAttribute="bottomMargin" id="cPE-U7-9iy"/>
+                                                <constraint firstItem="Ejt-kC-J0j" firstAttribute="leading" secondItem="zwD-dT-MOf" secondAttribute="trailing" constant="8" id="p49-5I-6sW"/>
+                                                <constraint firstItem="Ejt-kC-J0j" firstAttribute="top" secondItem="Y2x-fF-btc" secondAttribute="topMargin" id="t43-Ju-Fxj"/>
+                                                <constraint firstItem="zwD-dT-MOf" firstAttribute="leading" secondItem="Y2x-fF-btc" secondAttribute="leadingMargin" id="tRM-ST-dRO"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="m9z-ye-mRl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QDq-83-3kp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="m9z-ye-mRl" secondAttribute="bottom" id="ei8-gh-KqK"/>
+                            <constraint firstItem="m9z-ye-mRl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="sRH-Hs-V2Z"/>
+                            <constraint firstAttribute="trailing" secondItem="m9z-ye-mRl" secondAttribute="trailing" id="vOe-cq-7a1"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Sg3-TB-OU8">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="DY1-Vz-60Z">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1117" y="418"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="j2g-DA-Vhf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="diq-ZW-dex" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Po-mD-llR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="reH-Hy-mFr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7vX-8s-O2F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="1078"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="guardians" width="182" height="268"/>
+    </resources>
 </document>
