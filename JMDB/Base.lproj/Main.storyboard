@@ -7,10 +7,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Movie ListVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JMDB" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MovieListVC" customModule="JMDB" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -105,6 +105,7 @@
                                             <outlet property="linkLbl" destination="AQS-2p-XSm" id="lEY-Kf-cRJ"/>
                                             <outlet property="movieImg" destination="zwD-dT-MOf" id="jkO-ho-5ag"/>
                                             <outlet property="titleLbl" destination="VAR-hT-S9P" id="BNs-ar-yxj"/>
+                                            <segue destination="A8c-7h-1HW" kind="show" identifier="MovieDetail" id="A9o-j4-PYb"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -135,6 +136,99 @@
             </objects>
             <point key="canvasLocation" x="1117" y="418"/>
         </scene>
+        <!--Movie DetailVC-->
+        <scene sceneID="Q8n-xu-O1M">
+            <objects>
+                <viewController id="A8c-7h-1HW" customClass="MovieDetailVC" customModule="JMDB" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="33h-aq-ipZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ei5-0B-UVe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Syt-4c-GYL" customClass="MovieDetail" customModule="JMDB" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gsZ-2Y-3Da">
+                                <rect key="frame" x="206" y="72" width="189" height="228"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="189" id="YpO-Wd-ZHO"/>
+                                    <constraint firstAttribute="height" constant="228" id="qNl-XD-TkA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="lHQ-6X-Lh0">
+                                <rect key="frame" x="20" y="337" width="560" height="108"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="108" id="XT3-bw-Grk"/>
+                                </constraints>
+                                <string key="text">The cast was an eccentric bunch, and baby Groot stole my heart. I especially loved the prison scene, when they were goining over the datials of the escape plan and Groot completely sidelined everything. *Spoiler Alert* Starlords Dad is a Celestial. Which is essentially like being a GOD, so starlord is basically half GOD!!</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guardians of the Galaxy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Sm9-Il-mD1">
+                                <rect key="frame" x="20" y="308" width="560" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="0Qx-9S-19f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="dXY-Q0-62p">
+                                <rect key="frame" x="20" y="455" width="560" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="111" id="huO-Qp-Qi9"/>
+                                </constraints>
+                                <string key="text">The cast was an eccentric bunch, and baby Groot stole my heart. I especially loved the prison scene, when they were goining over the datials of the escape plan and Groot completely sidelined everything. *Spoiler Alert* Starlords Dad is a Celestial. Which is essentially like being a GOD, so starlord is basically half GOD!!</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="huO-Qp-Qi9"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lHQ-6X-Lh0" firstAttribute="leading" secondItem="Sm9-Il-mD1" secondAttribute="leading" id="5cI-Gv-Ldu"/>
+                            <constraint firstItem="dXY-Q0-62p" firstAttribute="trailing" secondItem="Syt-4c-GYL" secondAttribute="trailingMargin" id="9Qu-je-xMk"/>
+                            <constraint firstItem="Sm9-Il-mD1" firstAttribute="leading" secondItem="Syt-4c-GYL" secondAttribute="leadingMargin" id="A3W-9V-NoO"/>
+                            <constraint firstItem="Sm9-Il-mD1" firstAttribute="leading" secondItem="gsZ-2Y-3Da" secondAttribute="trailing" constant="-189" id="Ahs-7e-xH0"/>
+                            <constraint firstItem="lHQ-6X-Lh0" firstAttribute="top" secondItem="Sm9-Il-mD1" secondAttribute="bottom" constant="8" id="BcW-23-3yP"/>
+                            <constraint firstItem="Sm9-Il-mD1" firstAttribute="top" secondItem="gsZ-2Y-3Da" secondAttribute="bottom" constant="8" id="CNw-hp-y9m"/>
+                            <constraint firstItem="Sm9-Il-mD1" firstAttribute="trailing" secondItem="Syt-4c-GYL" secondAttribute="trailingMargin" id="F2d-MQ-WAc"/>
+                            <constraint firstItem="dXY-Q0-62p" firstAttribute="top" secondItem="lHQ-6X-Lh0" secondAttribute="bottom" constant="10" id="He9-5N-dWg"/>
+                            <constraint firstItem="dXY-Q0-62p" firstAttribute="leading" secondItem="Syt-4c-GYL" secondAttribute="leadingMargin" id="fB1-Qo-wq8"/>
+                            <constraint firstItem="lHQ-6X-Lh0" firstAttribute="leading" secondItem="gsZ-2Y-3Da" secondAttribute="trailing" constant="-189" id="iXL-pq-fg5"/>
+                            <constraint firstItem="Sm9-Il-mD1" firstAttribute="trailing" secondItem="Syt-4c-GYL" secondAttribute="trailingMargin" id="jvf-SZ-eig"/>
+                            <constraint firstItem="gsZ-2Y-3Da" firstAttribute="top" secondItem="33h-aq-ipZ" secondAttribute="bottom" constant="8" id="oCD-ia-o7d"/>
+                            <constraint firstItem="gsZ-2Y-3Da" firstAttribute="leading" secondItem="Syt-4c-GYL" secondAttribute="leadingMargin" id="tyU-Od-Rfx"/>
+                            <constraint firstItem="gsZ-2Y-3Da" firstAttribute="centerX" secondItem="Syt-4c-GYL" secondAttribute="centerX" id="vtI-G4-Zrc"/>
+                            <constraint firstItem="Ei5-0B-UVe" firstAttribute="top" secondItem="dXY-Q0-62p" secondAttribute="bottom" constant="15" id="ygH-JD-h6L"/>
+                            <constraint firstItem="lHQ-6X-Lh0" firstAttribute="trailing" secondItem="Sm9-Il-mD1" secondAttribute="trailing" id="zk7-L5-e8L"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="tyU-Od-Rfx"/>
+                                <exclude reference="Ahs-7e-xH0"/>
+                                <exclude reference="F2d-MQ-WAc"/>
+                                <exclude reference="iXL-pq-fg5"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="commentLbl" destination="lHQ-6X-Lh0" id="n9m-pF-3ad"/>
+                        <outlet property="linkLbl" destination="Sm9-Il-mD1" id="8NL-Gf-sbM"/>
+                        <outlet property="movieImg" destination="gsZ-2Y-3Da" id="sAh-Cs-tdD"/>
+                        <outlet property="plotLbl" destination="dXY-Q0-62p" id="sZn-jI-ffD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="265-Nh-fB2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117" y="1197"/>
+        </scene>
         <!--Create MovieVC-->
         <scene sceneID="KcL-kU-GXX">
             <objects>
@@ -148,7 +242,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2Lj-i9-9Xo">
-                                <rect key="frame" x="20" y="97" width="560" height="270"/>
+                                <rect key="frame" x="20" y="97" width="560" height="150"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Movie Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xfz-Nk-fZS">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
@@ -160,26 +254,23 @@
                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Personal Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rVf-9K-Eg7">
-                                        <rect key="frame" x="0.0" y="40" width="560" height="90"/>
+                                        <rect key="frame" x="0.0" y="40" width="560" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="560" id="Afq-rn-Kka"/>
+                                            <constraint firstAttribute="height" constant="30" id="XDL-DL-HRG"/>
                                             <constraint firstAttribute="height" constant="90" id="hMG-G9-J6h"/>
                                         </constraints>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
-                                    </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="IMDB Link" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZOC-6C-Nw2">
-                                        <rect key="frame" x="0.0" y="140" width="560" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="560" id="DK3-7c-b9s"/>
-                                        </constraints>
-                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="hMG-G9-J6h"/>
+                                            </mask>
+                                        </variation>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Plot Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qx5-IX-OFI">
-                                        <rect key="frame" x="0.0" y="180" width="560" height="90"/>
+                                        <rect key="frame" x="0.0" y="80" width="560" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="90" id="X89-Of-k9G"/>
                                             <constraint firstAttribute="width" constant="560" id="d34-FU-Y63"/>
@@ -187,14 +278,36 @@
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="X89-Of-k9G"/>
+                                            </mask>
+                                        </variation>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="IMDB Link" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZOC-6C-Nw2">
+                                        <rect key="frame" x="0.0" y="120" width="560" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="560" id="DK3-7c-b9s"/>
+                                            <constraint firstAttribute="height" constant="30" id="rtC-CC-qDt"/>
+                                        </constraints>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="guardians" translatesAutoresizingMaskIntoConstraints="NO" id="CuV-QK-9GJ">
-                                <rect key="frame" x="180" y="385" width="240" height="195"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P93-10-2Hg">
+                                <rect key="frame" x="263" y="387" width="74" height="30"/>
+                                <state key="normal" title="Add Image"/>
+                                <connections>
+                                    <action selector="addImage:" destination="zAF-qr-pNs" eventType="touchUpInside" id="tSo-x6-tX3"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CuV-QK-9GJ">
+                                <rect key="frame" x="180" y="267" width="240" height="269"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="195" id="Mq8-gm-74e"/>
-                                    <constraint firstAttribute="width" secondItem="CuV-QK-9GJ" secondAttribute="height" multiplier="16:13" id="Z6J-ui-w96"/>
+                                    <constraint firstAttribute="height" constant="269" id="Mq8-gm-74e"/>
+                                    <constraint firstAttribute="width" secondItem="CuV-QK-9GJ" secondAttribute="height" multiplier="16:13" constant="-91.076923076923094" id="Z6J-ui-w96"/>
                                     <constraint firstAttribute="height" constant="195" id="bLN-Ik-4aF"/>
                                     <constraint firstAttribute="width" constant="240" id="gZT-bt-Hf2"/>
                                 </constraints>
@@ -205,13 +318,6 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P93-10-2Hg">
-                                <rect key="frame" x="180" y="385" width="240" height="195"/>
-                                <state key="normal" title="Add Image"/>
-                                <connections>
-                                    <action selector="addImage:" destination="zAF-qr-pNs" eventType="touchUpInside" id="tSo-x6-tX3"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
